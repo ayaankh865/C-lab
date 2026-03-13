@@ -1,0 +1,22 @@
+//Program 2: Banana Level
+#include<stdio.h>
+
+int main(){
+	printf("Program 2- Output:\n");
+	int n, arr[100];
+    int even = 0, odd = 0;
+    printf("Enter the number of elements: ");
+    scanf("%d", &n);
+    printf("Enter %d integers:\n", n);
+    for(int i = 0; i < n; i++)
+    {
+        scanf("%d", &arr[i]);
+        if(arr[i] % 2 == 0)
+            even++;
+        else
+            odd++;
+    }
+    printf("Number of Even elements = %d\n", even);
+    printf("Number of Odd elements = %d\n", odd);
+	return 0;
+}
